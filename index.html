@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Giuliana Baque · Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="muzzle-flash"></div>
+  <div id="crosshair"></div>
+  <header class="hero">
+    <div class="hero-caja">
+      <div class="hero-contenido">
+
+        <div class="hero-texto">
+          <span class="agent-label">AGENT</span>
+          <h1>Giuliana Baque</h1>
+
+          <h2 class="agent-role">
+            ROLE · <span class="rol">Frontend Developer</span>
+          </h2>
+
+          <p class="hero-desc">
+            Diseño interfaces web interactivas y visuales,
+            inspiradas en experiencias digitales modernas.
+          </p>
+
+          <p class="hero-tech-label">ABILITIES</p>
+          <p class="hero-tech">
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">Grid</span>
+            <span class="tech">Flexbox</span>
+            <span class="tech">JavaScript</span>
+          </p>
+
+          <a href="#portfolio" class="boton">View Portfolio</a>
+        </div>
+
+        <div class="hero-foto">
+          <img src="img/foto_1.png" alt="Foto de Giuliana Baque">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="card sobre-mi">
+      <h2>Agent Info</h2>
+
+      <p class="intro">
+        Frontend developer en formación especializada en diseño de interfaces.
+      </p>
+
+      <p>
+        Me dedico al diseño y desarrollo de interfaces web modernas, responsive y centradas
+        en la experiencia de usuario, cuidando tanto la parte visual como la funcional.
+      </p>
+
+      <p>
+        Busco seguir aprendiendo y evolucionando como desarrolladora frontend,
+        aportando creatividad, orden y atención al detalle en cada proyecto.
+      </p>
+    </section>
+
+  <section class="card" id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-grid">
+
+      <a href="https://interficiesyuliana.netlify.app/" target="_blank" class="portfolio-item main-project">
+
+       <div class="portfolio-img"> <img src="img/valo1.png" alt="Carousel UI"></div>
+
+
+        <h3>Carousel UI</h3>
+
+        <p>
+          Diseño de un carousel accesible y usable, centrado en la experiencia
+          de usuario.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
+      </a>
+
+      <a href="https://yulianaclock.netlify.app/"
+        target="_blank"
+        class="portfolio-item main-project">
+
+       <div class="portfolio-img"> <img src="img/valo2.png" alt="Carousel UI"></div>
+
+        <h3>Clock App</h3>
+
+        <p>
+          Interfaz interactiva tipo reloj con diseño responsive y animaciones.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
+      </a>
+
+      <a href="https://yulianabaquelayout.netlify.app/"
+        target="_blank"
+        class="portfolio-item main-project">
+
+       <div class="portfolio-img"> <img src="img/valo3.png" alt="Carousel UI"></div>
+
+        <h3>Flexbox Layout</h3>
+
+        <p>
+          Maquetación responsive utilizando Flexbox y buenas prácticas CSS.
+        </p>
+
+        <span class="ver-proyecto">Ver proyecto</span>
+      </a>
+
+    </div>
+  </section>
+
+    <section class="card cv">
+      <h2>Loadout</h2>
+
+      <p>
+        Estudiante de Desarrollo de Aplicaciones Web con interés en diseño web
+        y desarrollo frontend.
+      </p>
+
+      <button class="boton" id="toggleCV">Equip Loadout</button>
+
+      <div id="cvDetalles" class="oculto">
+        <h3>Training</h3>
+        <ul>
+          <li>CFGS Desarrollo de Aplicaciones Web (DAW) – En curso</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML5 y CSS3</li>
+          <li>Diseño responsive</li>
+          <li>JavaScript básico</li>
+          <li>Git y GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card">
+      <h2>Send Message</h2>
+
+      <form class="form-contacto">
+        <label>
+          Nombre
+          <input type="text" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" required>
+        </label>
+
+        <label>
+          Mensaje
+          <textarea rows="4" required></textarea>
+        </label>
+
+        <button class="boton" type="submit">Transmit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    SYSTEM ONLINE · 2025 · Giuliana Baque
+  </footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
