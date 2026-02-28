@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <title>Giuliana Baque · Frontend Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="Portfolio de Giuliana Baque, frontend developer especializada en interfaces modernas y responsive.">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+  </noscript>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div id="muzzle-flash"></div>
-  <div id="crosshair"></div>
+
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-caja">
       <div class="hero-contenido">
@@ -45,7 +53,11 @@
         </div>
 
         <div class="hero-foto">
-          <img src="img/foto_1.png" alt="Foto de Giuliana Baque">
+          <img src="img/foto_1.webp"
+               alt="Foto de Giuliana Baque"
+               width="190"
+               height="190"
+               fetchpriority="high">
         </div>
 
       </div>
@@ -53,6 +65,8 @@
   </header>
 
   <main class="contenedor">
+
+    <!-- ABOUT -->
     <section class="card sobre-mi">
       <h2>Agent Info</h2>
 
@@ -71,59 +85,80 @@
       </p>
     </section>
 
-  <section class="card" id="portfolio">
-    <h2>Portfolio</h2>
+    <!-- PORTFOLIO -->
+    <section class="card" id="portfolio">
+      <h2>Portfolio</h2>
 
-    <div class="portfolio-grid">
+      <div class="portfolio-grid">
 
-      <a href="https://interficiesyuliana.netlify.app/" target="_blank" class="portfolio-item main-project">
+        <a href="https://interficiesyuliana.netlify.app/"
+           target="_blank"
+           rel="noopener"
+           class="portfolio-item main-project">
 
-       <div class="portfolio-img"> <img src="img/valo1.png" alt="Carousel UI"></div>
+          <div class="portfolio-img">
+            <img src="img/valo1.webp"
+                 alt="Proyecto Carousel UI"
+                 width="800"
+                 height="450"
+                 loading="lazy">
+          </div>
 
+          <h3>Carousel UI</h3>
+          <p>
+            Diseño de un carousel accesible y usable, centrado en la experiencia
+            de usuario.
+          </p>
 
-        <h3>Carousel UI</h3>
+          <span class="ver-proyecto">Ver proyecto</span>
+        </a>
 
-        <p>
-          Diseño de un carousel accesible y usable, centrado en la experiencia
-          de usuario.
-        </p>
+        <a href="https://yulianaclock.netlify.app/"
+           target="_blank"
+           rel="noopener"
+           class="portfolio-item main-project">
 
-        <span class="ver-proyecto">Ver proyecto</span>
-      </a>
+          <div class="portfolio-img">
+            <img src="img/valo2.webp"
+                 alt="Proyecto Clock App"
+                 width="800"
+                 height="450"
+                 loading="lazy">
+          </div>
 
-      <a href="https://yulianaclock.netlify.app/"
-        target="_blank"
-        class="portfolio-item main-project">
+          <h3>Clock App</h3>
+          <p>
+            Interfaz interactiva tipo reloj con diseño responsive y animaciones.
+          </p>
 
-       <div class="portfolio-img"> <img src="img/valo2.png" alt="Carousel UI"></div>
+          <span class="ver-proyecto">Ver proyecto</span>
+        </a>
 
-        <h3>Clock App</h3>
+        <a href="https://yulianabaquelayout.netlify.app/"
+           target="_blank"
+           rel="noopener"
+           class="portfolio-item main-project">
 
-        <p>
-          Interfaz interactiva tipo reloj con diseño responsive y animaciones.
-        </p>
+          <div class="portfolio-img">
+            <img src="img/valo3.webp"
+                 alt="Proyecto Flexbox Layout"
+                 width="800"
+                 height="450"
+                 loading="lazy">
+          </div>
 
-        <span class="ver-proyecto">Ver proyecto</span>
-      </a>
+          <h3>Flexbox Layout</h3>
+          <p>
+            Maquetación responsive utilizando Flexbox y buenas prácticas CSS.
+          </p>
 
-      <a href="https://yulianabaquelayout.netlify.app/"
-        target="_blank"
-        class="portfolio-item main-project">
+          <span class="ver-proyecto">Ver proyecto</span>
+        </a>
 
-       <div class="portfolio-img"> <img src="img/valo3.png" alt="Carousel UI"></div>
+      </div>
+    </section>
 
-        <h3>Flexbox Layout</h3>
-
-        <p>
-          Maquetación responsive utilizando Flexbox y buenas prácticas CSS.
-        </p>
-
-        <span class="ver-proyecto">Ver proyecto</span>
-      </a>
-
-    </div>
-  </section>
-
+    <!-- CV -->
     <section class="card cv">
       <h2>Loadout</h2>
 
@@ -176,12 +211,12 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     SYSTEM ONLINE · 2025 · Giuliana Baque
   </footer>
 
-<script src="script.js" defer></script>
+  <!-- JS defer -->
+  <script src="script.js" defer></script>
 
 </body>
 </html>
